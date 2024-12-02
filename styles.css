@@ -1,0 +1,95 @@
+:root {
+  --text-color: #df927d;
+  --text-color-blend: #03055b;
+  --back-up-color: #e7faf9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-none;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  max-width: 88%;
+  max-height: 90vh;
+  background-image: url("./chevrolet.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+nav {
+  width: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo h1 {
+  font-size: 27px;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: 0.6s;
+}
+li a:hover {
+  background-color: var(--text-color);
+}
+.active {
+  background-color: var(--text-color);
+}
+nav .login-sec button {
+  color: #fff;
+  background-color: var(--text-color);
+  border: 2px solid #fff;
+}
+button {
+  border: 2px solid var(--back-up-color);
+  background: transparent;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--back-up-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover ,.login-sec button:hover{
+  background-color: var(--back-up-color);
+  color: #000;
+}
+
+.home-content {
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+.home-container {
+  align-items: center;
+  width: 600px;
+}
+.home-container h1 {
+  color: #fff;
+  font-size: 5rem;
+  padding-bottom: 30px;
+}
+.home-container p {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.explore {
+  margin-left: 20px;
+}
